@@ -2,6 +2,6 @@ FreeTTS is an open source speech synthesis system written entirely in the Java p
 
 It is based upon Flite. FreeTTS is an implementation of Sun's Java Speech API.
 
-- freeTTS Official : https://freetts.com/
-- freeTTS information : https://freetts.sourceforge.io/
-- freeTTS Wikipedia : https://en.wikipedia.org/wiki/FreeTTS
+- FreeTTS Official : https://freetts.com/
+- FreeTTS information : https://freetts.sourceforge.io/
+- FreeTTS Wikipedia : https://en.wikipedia.org/wiki/FreeTTS
