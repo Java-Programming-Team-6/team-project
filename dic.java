@@ -15,15 +15,15 @@ import javax.swing.Icon;
 import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
-public class dic extends JFrame{
-	static JLabel title;//ÀüÀÚ»çÀü Á¦¸ñ
-	static JLabel label;//Ã£°í ½ÍÀº ´Ü¾î ÀÔ·ÂÃ¢
-	static JLabel info;//´Ü¾î ÀÇ¹Ì Ãâ·Â
-	Color color = new Color(36, 36, 36);//±ÛÀÚ»ö
-	Color color1 = new Color(245, 245, 245);//¹è°æ»ö
+public class dic extends JFrame {
+	static JLabel title;//ì „ìì‚¬ì „ ì œëª©
+	static JLabel label;//ì°¾ê³  ì‹¶ì€ ë‹¨ì–´ ì…ë ¥ì°½
+	static JLabel info;//ë‹¨ì–´ ì˜ë¯¸ ì¶œë ¥
+	Color color = new Color(36, 36, 36);//ê¸€ììƒ‰
+	Color color1 = new Color(245, 245, 245);//ë°°ê²½ìƒ‰
 
 	public dic() {
-		setTitle("ÀüÀÚ»çÀü");
+		setTitle("ì „ìì‚¬ì „");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		
@@ -32,12 +32,12 @@ public class dic extends JFrame{
 		c.setBackground(color1);
 		
 		search searches = new search();
-		c.add(searches, BorderLayout.EAST);//°Ë»ö ¹öÆ°
+		c.add(searches, BorderLayout.EAST);//ê²€ìƒ‰ ë²„íŠ¼
 		
 		getword word = new getword();
-		c.add(word, BorderLayout.WEST);//±âº» »óÅÂÃ¢ Ãâ·Â
+		c.add(word, BorderLayout.WEST);//ê¸°ë³¸ ìƒíƒœì°½ ì¶œë ¥
 		
-		ButtonFrame button = new ButtonFrame();//³ª¶óº° ¹ßÀ½ ¹öÆ°Ã¢
+		ButtonFrame button = new ButtonFrame();//ë‚˜ë¼ë³„ ë°œìŒ ë²„íŠ¼ì°½
 		c.add(button, BorderLayout.SOUTH);
 
 
@@ -46,26 +46,26 @@ public class dic extends JFrame{
 	}
 	
 	
-	class getword extends JPanel{
+	class getword extends JPanel {
 		public getword() {
 			setLayout(new GridLayout(3, 1));
 			setBackground(color1);
-			title = new JLabel("ÀüÀÚ »çÀü ");
-			info = new JLabel(" Ã£°í ½ÍÀº ´Ü¾î¸¦ ÀÔ·ÂÇÏ¼¼¿ä..");
+			title = new JLabel("ì „ì ì‚¬ì „ ");
+			info = new JLabel(" ì°¾ê³  ì‹¶ì€ ë‹¨ì–´ë¥¼ ì…ë ¥í•˜ì„¸ìš”..");
 			label = new JLabel("");
 			
-			title.setFont(new Font("¸¼Àº °íµñ", 0, 15));
+			title.setFont(new Font("ë§‘ì€ ê³ ë”•", 0, 15));
 			title.setBackground(color);
 			title.setForeground(color);
 			title.setHorizontalAlignment(SwingConstants.LEFT);
 		
 			
-			info.setFont(new Font("¸¼Àº °íµñ", 0, 30));
+			info.setFont(new Font("ë§‘ì€ ê³ ë”•", 0, 30));
 			info.setBackground(color);
 			info.setForeground(color);
 			info.setHorizontalAlignment(SwingConstants.CENTER);
 			
-			label.setFont(new Font("¸¼Àº °íµñ", 0, 20));
+			label.setFont(new Font("ë§‘ì€ ê³ ë”•", 0, 20));
 			label.setBackground(color);
 			label.setForeground(color);
 			label.setHorizontalAlignment(SwingConstants.LEFT);
@@ -75,47 +75,47 @@ public class dic extends JFrame{
 			add(label);
 		}
 	}
-	class search extends JPanel{//°Ë»ö ¹öÆ°Ã¢
+	class search extends JPanel {//ê²€ìƒ‰ ë²„íŠ¼ì°½
 		public search() {			
 			JButton searchs;
 			
 			setBackground(Color.DARK_GRAY);
 			setLayout(new GridLayout(1, 1));
 			
-			searchs = new JButton("°Ë»ö");
+			searchs = new JButton("ê²€ìƒ‰");
 			
-			searchs.setFont(new Font("¸¼Àº °íµñ", 0, 25));
+			searchs.setFont(new Font("ë§‘ì€ ê³ ë”•", 0, 25));
 			searchs.setBackground(Color.DARK_GRAY);
 			searchs.setForeground(Color.WHITE);
 			add(searchs);
 			dict handler = new dict();
 			searchs.addActionListener(handler);
 		}
-		private class dict implements ActionListener{
+		private class dict implements ActionListener {
 
 			@Override
 			public void actionPerformed(ActionEvent event) {
-				//´Ü¾î Ã£±â
-				//¶æ Ãâ·Â
+				//ë‹¨ì–´ ì°¾ê¸°
+				//ëœ» ì¶œë ¥
 			}
 		}
 	}
 	
-	class ButtonFrame extends JPanel{//¹ßÀ½ ¹öÆ° ÀÔ·ÂÃ¢
+	class ButtonFrame extends JPanel {//ë°œìŒ ë²„íŠ¼ ì…ë ¥ì°½
 		public ButtonFrame() {
-			JButton[] words = new JButton[4];//¹ßÀ½
+			JButton[] words = new JButton[4];//ë°œìŒ
 
 			setBackground(color1);
 			setLayout(new GridLayout(1, 4, 5, 5));
 			
-			words[0] = new JButton("¿µ¾î");
-			words[1] = new JButton("¿µ±¹");
-			words[2] = new JButton("µ¶ÀÏ");
-			words[3] = new JButton("Ä³³ª´Ù");
+			words[0] = new JButton("ì˜ì–´");
+			words[1] = new JButton("ì˜êµ­");
+			words[2] = new JButton("ë…ì¼");
+			words[3] = new JButton("ìºë‚˜ë‹¤");
 
 			for(int i=0; i<4; i++)
 			{
-				words[i].setFont(new Font("¸¼Àº °íµñ", 0, 25));
+				words[i].setFont(new Font("ë§‘ì€ ê³ ë”•", 0, 25));
 				words[i].setBackground(Color.DARK_GRAY);
 				words[i].setForeground(Color.WHITE);
 				add(words[i]);
@@ -130,11 +130,11 @@ public class dic extends JFrame{
 			@Override
 			public void actionPerformed(ActionEvent event)
 			{
-				//¼Ò¸® Ãâ·Â
+				//ì†Œë¦¬ ì¶œë ¥
 			}
 		}	
 	}
-	public static void dictionary(String wordss)//ÀÔ&Ãâ·Â ¸¸µé±â
+	public static void dictionary(String wordss)//ì…&ì¶œë ¥ ë§Œë“¤ê¸°
 	{
 		JTextField textfield = new JTextField();
 		JFrame frame = new JFrame();
@@ -142,7 +142,7 @@ public class dic extends JFrame{
 		frame.add(textfield, BorderLayout.NORTH);
 		
 	}
-	public static void main(String[] args) {//½ÇÇà
+	public static void main(String[] args) {//ì‹¤í–‰
 		new dic();
 		dictionary("a");
 	}
