@@ -108,10 +108,10 @@ public class dic extends JFrame {
 			setBackground(color1);
 			setLayout(new GridLayout(1, 4, 5, 5));
 			
-			words[0] = new JButton("영어");
-			words[1] = new JButton("영국");
-			words[2] = new JButton("독일");
-			words[3] = new JButton("캐나다");
+			words[0] = new JButton("미국식");
+			words[1] = new JButton("영국식");
+			words[2] = new JButton("호주식");
+			words[3] = new JButton("캐나다식");
 
 			for(int i=0; i<4; i++)
 			{
