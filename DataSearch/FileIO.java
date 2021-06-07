@@ -17,14 +17,13 @@ public class FileIO
 			
 			while(true) 
 			{
-				String element = text.readLine();
-				
-				if(element == null)
+				String word = text.readLine();
+				String mean = text.readLine();
+
+				if(word == null)
 					break;
-				
-				String[] elementArr = element.split(" ");
-				
-				map.put(elementArr[0], elementArr[1]);
+
+				map.put(word,mean);
 			}
 			
 			text.close();
