@@ -122,7 +122,7 @@ public class DictionaryGUI extends JFrame {
 	}
 
 static void playSound() {
-		File file= new File("C:\\Users\\kbhkk\\eclipse-workspace\\test\\team\\src\\afd\\" + textfield.getText() + ".wav");
+		File file= new File("C:\\Users\\kbhkk\\Documents\\GitHub\\team-project\\MusicHozu\\" + textfield.getText() + ".wav");
 		AudioInputStream audioInputStream = null;
 		SourceDataLine auline = null;
 		try {
