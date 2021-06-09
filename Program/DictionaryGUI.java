@@ -74,8 +74,7 @@ public class DictionaryGUI extends JFrame {
 		button4.addActionListener(
 				new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
-						DictionaryTTS tts = new DictionaryTTS("kevin16");
-						tts.say(label4.getText());
+						
 					}
 				});
 		
