@@ -16,7 +16,6 @@ import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
 public class DictionaryGUI extends JFrame {
-static String word;
 	public DictionaryGUI() {
 		System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
 		this.setTitle("영어사전");
@@ -123,7 +122,7 @@ static String word;
 	}
 
 static void playSound() {
-		File file= new File("C:\\Users\\kbhkk\\eclipse-workspace\\test\\team\\src\\afd\\" + word + ".wav");
+		File file= new File("C:\\Users\\kbhkk\\eclipse-workspace\\test\\team\\src\\afd\\" + textfield.getText() + ".wav");
 		AudioInputStream audioInputStream = null;
 		SourceDataLine auline = null;
 		try {
