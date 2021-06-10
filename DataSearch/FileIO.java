@@ -35,16 +35,14 @@ public class FileIO
 	
 	}
 
-	public static void DataSearch(String word)
+	public static String DataSearch(String word)
 	{
-		if(map.containsKey(word))
+		if(!map.containsKey(word))
 		{
-			System.out.println(word + " " + map.get(word));
+			return "해당 단어가 존재하지 않습니다.";	
 		}
-		else
-		{
-			System.out.println("The word does not exist");
-		}
+	
+		return map.get(word);
 	}
 
 }

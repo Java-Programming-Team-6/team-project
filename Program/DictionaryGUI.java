@@ -17,6 +17,7 @@ import com.sun.speech.freetts.VoiceManager;
 
 public class DictionaryGUI extends JFrame {
 	public DictionaryGUI() {
+		FileIO.FileInputMap();
 		System.setProperty("freetts.voices", "com.sun.speech.freetts.en.us.cmu_us_kal.KevinVoiceDirectory");
 		this.setTitle("영어사전");
 		
@@ -53,7 +54,7 @@ public class DictionaryGUI extends JFrame {
 			public void actionPerformed(ActionEvent e)
 			{
 				label2.setText(textfield.getText());
-				label4.setText(textfield.getText());
+				label4.setText(FileIO.DataSearch(textfield.getText()));
 			}
 		});
 		
