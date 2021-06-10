@@ -21,9 +21,11 @@ public class DictionaryGUI_2 extends JFrame {
 		this.setTitle("전자사전");
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
+		Color color = new Color(150, 50, 200);
+		
 		Container frame = getContentPane();
 		frame.setLayout(null);
-		frame.setBackground(Color.white);
+		frame.setBackground(Color.DARK_GRAY);
 		
 		
 		JTextField textfield = new JTextField("검색할 단어를 입력하세요");
@@ -48,20 +50,21 @@ public class DictionaryGUI_2 extends JFrame {
 		
 		
 		
-		ImageIcon clockImg = new ImageIcon(DictionaryGUI_2.class.getResource("/team/빅벤아이콘.PNG"));
+		ImageIcon clockImg = new ImageIcon(DictionaryGUI_2.class.getResource("/team/msClock2.PNG"));
 		JLabel clockLabel = new JLabel(clockImg);
 		clockLabel.setSize(50, 90);
 		clockLabel.setLocation(220, 0);
 		
-		ImageIcon freeImg = new ImageIcon(DictionaryGUI_2.class.getResource("/team/여신상아이콘.PNG"));
+		//ImageIcon freeImg = new ImageIcon(DictionaryGUI_2.class.getResource("/team/여신상아이콘.PNG"));
+		ImageIcon freeImg = new ImageIcon(DictionaryGUI_2.class.getResource("/team/msFree2.PNG"));
 		JLabel freeLabel = new JLabel(freeImg);
 		freeLabel.setSize(50, 90);
-		freeLabel.setLocation(250, 5);
+		freeLabel.setLocation(250, 15);
 		
-		ImageIcon houseImg = new ImageIcon(DictionaryGUI_2.class.getResource("/team/오페라하우스아이콘.PNG"));
+		ImageIcon houseImg = new ImageIcon(DictionaryGUI_2.class.getResource("/team/msHouse2.PNG"));
 		JLabel houseLabel = new JLabel(houseImg);
 		houseLabel.setSize(75, 90);
-		houseLabel.setLocation(294, 25);
+		houseLabel.setLocation(290, 25);
 		
 		ImageIcon micImg = new ImageIcon(DictionaryGUI_2.class.getResource("/team/마이크아이콘.PNG"));
 		JLabel micLabel = new JLabel(micImg);
@@ -75,7 +78,7 @@ public class DictionaryGUI_2 extends JFrame {
 		label5.setFont(new Font("CookieRun Black", Font.PLAIN, 24));
 		//label0.setFont(new Font("나눔스퀘어라운드 ExtraBold", Font.PLAIN, 24));
 		label5.setBackground(Color.BLACK);
-		label5.setForeground(Color.black);
+		label5.setForeground(Color.white);
 		label5.setSize(100, 50);
 		label5.setLocation(50, 20);
 		
@@ -83,7 +86,7 @@ public class DictionaryGUI_2 extends JFrame {
 		label6.setFont(new Font("메이플스토리", Font.PLAIN, 10));
 		//label0.setFont(new Font("나눔스퀘어라운드 ExtraBold", Font.PLAIN, 24));
 		label6.setBackground(Color.BLACK);
-		label6.setForeground(Color.black);
+		label6.setForeground(Color.white);
 		label6.setSize(200, 25);
 		label6.setLocation(50, 60);
 		
