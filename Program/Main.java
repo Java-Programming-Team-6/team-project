@@ -1,3 +1,5 @@
+package Dictionary;
+
 import javax.swing.JFrame;
 
 public class Main {
