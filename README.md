@@ -7,7 +7,7 @@
 ## 프로그램 실행 방법
 ### 프로그램 설치
 1. team project master branch 다운로드
-2. Program 디렉토리 -> Main.java, DictionaryGUI.java, DictionaryTTS.java, FileIO.java, mbrola 디렉토리, DictionaryData 디렉토리, CookiRun Black.ttf, Maplestory Bold.ttf
+2. Program 디렉토리 -> Main.java, DictionaryGUI.java, DictionaryTTS.java, FileIO.java, mbrola 디렉토리, DictionaryData 디렉토리, CookiRun Black.ttf, Maplestory Bold.ttf 확인
 3. mbrola 디렉토리, DictionaryData 디렉토리들을 C드라이브에 옮기기 (각각 C:\\mbrola, C:\\DictionaryData 으로 설정)
 4. CookiRun Black.ttf / Maplestory Bold.ttf 폰트 두 가지 모두 설치
 5. "Dictionary" java project 생성 -> "Dictionary" package 생성 -> Main.java, DictionaryGUI.java, DictionaryTTS.java, FileIO.java 추가
