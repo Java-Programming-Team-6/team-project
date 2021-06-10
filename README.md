@@ -7,11 +7,12 @@
 ## 프로그램 실행 방법
 ### 프로그램 설치
 1. team project master branch 다운로드
-2. mbrola 디렉토리, DictionaryData 디렉토리 C드라이브에 옮기기 (각각 C:\\mbrola, C:\\DictionaryData 으로 설정)
-3. CookiRun Black.ttf / Maplestory Bold.ttf 폰트 두 가지 모두 설치
+2. Program 디렉토리 -> Main.java, Dictionary.java, DictionaryTTS.java, FileIO.java, mbrola 디렉토리, DictionaryData 디렉토리, 
+3. mbrola 디렉토리, DictionaryData 디렉토리 C드라이브에 옮기기 (각각 C:\\mbrola, C:\\DictionaryData 으로 설정)
+4. CookiRun Black.ttf / Maplestory Bold.ttf 폰트 두 가지 모두 설치
 ### 프로그램 환경 구성
 1. jdk-15.0.2 와 호환되는 jdk 요구됨.
-2. FreeTTS-1.2.2 설치
+2. FreeTTS-1.2.2 설치 : https://sourceforge.net/projects/freetts/files/ -> FreeTTS 1.2.2 -> freetts-1-2-2-bin.zip 다운로드
 3. freetts-1.2.2-bin -> freetts-1.2 -> lib -> jsapi.exe 실행 : 실행하면 jsapi.jar 설치 완료
 4. java project -> Properties -> Java Build Path -> Libraries -> Classpath -> Add External JARs...
 5. lib 디렉토리 내의 모든 ".jar" 파일 추가
