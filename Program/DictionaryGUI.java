@@ -16,8 +16,6 @@ public class DictionaryGUI extends JFrame {
 		
 		this.setTitle("전자사전");
 		
-		Color color = new Color(150, 50, 200);
-		
 		Container frame = getContentPane();
 		frame.setLayout(null);
 		frame.setBackground(Color.DARK_GRAY);
@@ -54,9 +52,6 @@ public class DictionaryGUI extends JFrame {
 		houseLabel.setSize(75, 90);
 		houseLabel.setLocation(290, 25);
 		
-		ImageIcon micImg = new ImageIcon("C:\\DictionaryData\\마이크아이콘.png");
-		JLabel micLabel = new JLabel(micImg);
-		
 		JLabel label1 = new JLabel("검색한 단어 : ");
 		label1.setFont(new Font("메이플스토리", Font.PLAIN, 12));
 		
@@ -89,8 +84,7 @@ public class DictionaryGUI extends JFrame {
 		button1.setSize(50, 30);
 		button1.setFont(new Font("메이플스토리", Font.PLAIN, 12));
 		button1.setBackground(Color.WHITE);
-		button1.addActionListener(new ActionListener() 
-		{
+		button1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e)
 			{
 				label2.setText(textfield.getText());
@@ -100,8 +94,7 @@ public class DictionaryGUI extends JFrame {
 		textfield.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				label2.setText(textfield.getText());
-				label4.setText(textfield.getText());
-				textfield.setText("");
+				label4.setText(FileIO.DataSearch(textfield.getText()));
 			}
 		});
 		
@@ -161,7 +154,7 @@ public class DictionaryGUI extends JFrame {
 		label3.setSize(100, 20);
 		label3.setLocation(20, 5);
 		panel3.add(label4);
-		label4.setSize(100, 20);
+		label4.setSize(200, 20);
 		label4.setLocation(45, 5);
 		
 		JPanel panel4 = new JPanel();
