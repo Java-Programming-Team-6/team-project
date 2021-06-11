@@ -71,7 +71,7 @@ lack
 municipal
 시의
 multiply
-급증하다
+급증하다, 늘리다, 번식시키다
 mutual
 상호의
 largely
@@ -81,7 +81,7 @@ lastingly
 lavatory
 기차, 비행기의 화장실
 support
-지지, 지주
+지지, 지주, 지주물
 irritate
 짜증나게(초조하게)하다
 generous
@@ -112,14 +112,6 @@ grasp
 쥠, 지배(력)
 reconsider
 재고하다
-support
-지지, 지주, 지지물
-irritate
-짜증나게(초조하게)하다
-generous
-관대한, 마음이 넓은
-tolerant
-관대한, 아량이 있는
 prove
 입증하다
 illustrate
@@ -136,8 +128,6 @@ strengthen
 강하게하다, 강해지다
 reinforce
 보강하다
-multiply
-늘리다, 번식시키다
 reproduce
 재생시키다, 재현하다
 elicit
